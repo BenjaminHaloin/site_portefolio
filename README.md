@@ -29,3 +29,8 @@ Ce portfolio présente mon parcours, mes projets, mon objectif professionnel et 
 ## Contact
 
 contact@benjaminhaloin.fr
+
+## Utilisation
+
+Ce dépôt est public afin de présenter mon portfolio professionnel et ma progression.
+Le code, les textes, la direction artistique et les éléments visuels ne sont pas destinés à être copiés ou réutilisés sans autorisation.
