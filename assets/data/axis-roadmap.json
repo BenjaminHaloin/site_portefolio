@@ -1,0 +1,19 @@
+{
+  "done": [
+    "Structure multi-pages",
+    "Galerie Obsidian",
+    "Premiers projets"
+  ],
+  "current": [
+    "Identité d’interface",
+    "CSS séparé",
+    "Responsive"
+  ],
+  "planned": [
+    "CV PDF",
+    "LinkedIn",
+    "GitHub vers VPS",
+    "Domaine personnalisé",
+    "HTTPS"
+  ]
+}

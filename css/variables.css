@@ -1,0 +1,33 @@
+:root {
+  --bg: #03040a;
+  --bg-2: #070914;
+  --bg-3: #0b1020;
+  --panel: rgba(10, 15, 30, .72);
+  --panel-strong: rgba(13, 20, 38, .94);
+  --panel-soft: rgba(255, 255, 255, .045);
+  --line: rgba(190, 205, 255, .13);
+  --line-soft: rgba(255, 255, 255, .075);
+  --line-strong: rgba(134, 104, 255, .46);
+  --text: #f7f8ff;
+  --muted: #aab4cf;
+  --subtle: #6f7a97;
+  --axis: #8b5cf6;
+  --axis-deep: #5b37d6;
+  --axis-2: #22d3ee;
+  --axis-3: #f4c76b;
+  --good: #35d07f;
+  --warn: #f4c76b;
+  --font-title: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --container: 1180px;
+  --radius-xl: 30px;
+  --radius-lg: 22px;
+  --radius-md: 15px;
+  --radius-sm: 11px;
+  --shadow: 0 28px 90px rgba(0, 0, 0, .52);
+  --shadow-soft: 0 18px 50px rgba(0, 0, 0, .32);
+  --glow-axis: 0 0 70px rgba(139, 92, 246, .24);
+  --glow-cyan: 0 0 56px rgba(34, 211, 238, .16);
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}

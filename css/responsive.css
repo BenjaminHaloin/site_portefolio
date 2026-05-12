@@ -1,0 +1,30 @@
+@media (max-width: 1080px) {
+  .home-hero, .detail-layout { grid-template-columns: 1fr; }
+  .detail-sidebar { position: static; }
+  .home-projects, .progress-grid, .project-stats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 780px) {
+  .navbar { flex-wrap: wrap; }
+  .menu-toggle { display: inline-block; margin-left: auto; }
+  .nav-links { display: none; width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--panel-strong); }
+  .nav-links.is-open { display: grid; }
+  .nav-links a { width: 100%; justify-content: flex-start; padding: 12px 14px; }
+  .section-heading.split { align-items: start; flex-direction: column; }
+  .project-grid, .feature-grid.three, .module-grid, .roadmap-grid, .timeline.compact, .live-panel { grid-template-columns: 1fr; }
+  .screenshot-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-copy h1, .page-hero h1, .project-hero h1 { font-size: clamp(2.7rem, 15vw, 4.6rem); }
+}
+@media (max-width: 520px) {
+  .section, .page-hero, .project-hero, .detail-layout, .home-hero, .site-footer, .navbar { width: min(100% - 26px, var(--container)); }
+  .home-projects, .progress-grid, .project-stats, .screenshot-grid { grid-template-columns: 1fr; }
+  .btn { width: 100%; }
+  .feature-card, .project-card, .progress-card, .roadmap-card, .detail-block, .sidebar-card, .stat-card, .cta-panel { padding: 22px; border-radius: 22px; }
+  .axis-loader-core { margin-bottom: 220px; }
+}
+
+@media (max-width: 900px) {
+  .proof-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .back-to-top { right: 14px; bottom: 14px; width: 42px; height: 42px; border-radius: 14px; }
+}

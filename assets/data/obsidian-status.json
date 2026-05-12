@@ -1,0 +1,14 @@
+{
+  "status": "development",
+  "repository": "private",
+  "version": "internal",
+  "commands": "evolving",
+  "modules": [
+    "Tickets",
+    "Logs",
+    "Modération",
+    "Axiom Security",
+    "Nexus"
+  ],
+  "publicData": "in-preparation"
+}

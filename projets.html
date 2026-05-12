@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets & progression — Axis System</title>
+  <meta name="description" content="Projets de Benjamin Haloin dans le cadre de sa reconversion vers le développement web.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="brand" aria-label="Retour à l'accueil">
+        <span class="brand-mark">AX</span>
+        <span class="brand-text">Axis System</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li><li><a href="projets.html">Projets</a></li><li><a href="parcours.html">Parcours</a></li><li><a href="objectif.html">Objectif</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero reveal">
+      <p class="eyebrow">Projets & progression</p>
+      <h1>Mes projets construisent mon parcours.</h1>
+      <p>Cette page regroupe les projets liés à ma reconversion vers le développement web. Certains sont terminés, d'autres en cours, mais chacun me permet de travailler une compétence précise.</p>
+    </section>
+    <section class="section project-stats reveal">
+      <div class="stat-card card-glow"><span>04</span><p>Projets suivis</p></div>
+      <div class="stat-card card-glow"><span>01</span><p>Projet terminé</p></div>
+      <div class="stat-card card-glow"><span>02</span><p>Projets en cours</p></div>
+      <div class="stat-card card-glow"><span>01</span><p>Projet expérimental</p></div>
+    </section>
+    <section class="section reveal">
+      <div class="filter-bar" aria-label="Filtrer les projets">
+        <button type="button" class="is-active" data-filter="all">Tous</button><button type="button" data-filter="web">Web</button><button type="button" data-filter="discord">Discord</button><button type="button" data-filter="done">Terminés</button><button type="button" data-filter="current">En cours</button><button type="button" data-filter="experimental">Expérimental</button>
+      </div>
+      <div class="project-grid all-projects">
+        <article class="project-card card-glow featured" data-category="web current">
+          <div class="card-top"><span class="badge badge-progress">En cours</span><span class="mono">Projet central</span></div>
+          <h3>Axis System</h3>
+          <p>Portfolio professionnel et terrain d'apprentissage principal. Il centralise mon parcours, mes projets, ma progression et mon objectif d'alternance.</p>
+          <div class="progress-bar"><span style="--progress:65%"></span></div>
+          <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span></div>
+          <div class="card-actions"><a href="pages/portfolio.html" class="btn btn-primary">Détails</a><a href="index.html" class="btn btn-secondary">Accueil</a></div>
+        </article>
+        <article class="project-card card-glow" data-category="discord current">
+          <div class="card-top"><span class="badge badge-progress">En développement</span><span class="mono">Dépôt privé</span></div>
+          <h3>Obsidian</h3>
+          <p>Bot Discord communautaire modulaire pensé comme un système complet : tickets, logs, modération, rôles, configuration et sécurité.</p>
+          <div class="progress-bar"><span style="--progress:35%"></span></div>
+          <div class="tech-list"><span>JavaScript</span><span>Node.js</span><span>Discord.js</span><span>SQLite</span></div>
+          <div class="card-actions"><a href="pages/obsidian.html" class="btn btn-primary">Détails</a><a href="pages/obsidian.html#captures" class="btn btn-secondary">Captures</a></div>
+        </article>
+        <article class="project-card card-glow" data-category="web done">
+          <div class="card-top"><span class="badge badge-done">Terminé</span><span class="mono">Site publié</span></div>
+          <h3>DressCode</h3>
+          <p>Site vitrine terminé, publié via Netlify et disponible sur GitHub. Une réalisation concrète autour de la structure, du contenu et de l'identité visuelle.</p>
+          <div class="tech-list"><span>HTML</span><span>CSS</span><span>Netlify</span><span>GitHub</span></div>
+          <div class="card-actions"><a href="pages/dresscode.html" class="btn btn-primary">Détails</a><a href="https://dresscode-introrp.netlify.app" target="_blank" rel="noopener" class="btn btn-secondary">Site en ligne</a><a href="https://github.com/BenjaminHaloin/dresscode" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a></div>
+        </article>
+        <article class="project-card card-glow" data-category="web planned experimental">
+          <div class="card-top"><span class="badge badge-planned">Expérimental</span><span class="mono">Prévu</span></div>
+          <h3>Profil interactif</h3>
+          <p>Projet d'interface créative séparée du portfolio professionnel : page profil, liens, animations, ambiance visuelle et sélection musicale.</p>
+          <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI</span></div>
+          <div class="card-actions"><a href="pages/profil-interactif.html" class="btn btn-primary">Détails</a></div>
+        </article>
+
+      </div>
+    </section>
+    <section class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Preuves disponibles</p>
+        <h2>Des éléments concrets, pas seulement des descriptions.</h2>
+        <p>Chaque projet affiché ici a un rôle précis : montrer un rendu, une progression, une logique technique ou une étape d’apprentissage.</p>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card card-glow"><span>Portfolio</span><h3>Axis System</h3><p>Site construit comme projet central de reconversion.</p><a href="pages/portfolio.html">Voir la fiche</a></article>
+        <article class="proof-card card-glow"><span>Publié</span><h3>DressCode</h3><p>Site terminé, consultable en ligne et disponible sur GitHub.</p><a href="https://dresscode-introrp.netlify.app" target="_blank" rel="noopener">Ouvrir le site</a></article>
+        <article class="proof-card card-glow"><span>Captures</span><h3>Obsidian</h3><p>Projet privé pour le moment, présenté avec des captures réelles.</p><a href="pages/obsidian.html#captures">Voir les captures</a></article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Méthode projet</p>
+        <h2>Construire, tester, améliorer.</h2>
+        <p>Je ne cherche pas à tout rendre parfait du premier coup. Je pose une structure, je teste, je corrige, puis j'améliore le code, le rendu et la lisibilité.</p>
+      </div>
+      <div class="timeline compact">
+        <article><span>01</span><h3>Structurer</h3><p>Créer les fichiers, poser le HTML et organiser les sections.</p></article>
+        <article><span>02</span><h3>Styliser</h3><p>Construire l'interface, tester les couleurs et améliorer la lisibilité.</p></article>
+        <article><span>03</span><h3>Améliorer</h3><p>Corriger, rendre responsive, ajouter des interactions et documenter.</p></article>
+      </div>
+    </section>
+    <section class="section cta-panel reveal card-glow"><p class="eyebrow">Suite</p><h2>Ces projets sont le point de départ de ma progression.</h2><p>Ils me permettent d'apprendre en pratiquant et de construire progressivement un profil crédible pour une alternance.</p><div class="hero-actions"><a href="objectif.html" class="btn btn-primary">Voir mon objectif</a><a href="contact.html" class="btn btn-secondary">Me contacter</a></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Axis System</strong> — Portfolio professionnel de Benjamin Haloin.</p>
+      <div class="footer-links">
+        <a href="projets.html">Projets</a>
+        <a href="objectif.html">Objectif</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Retour en haut">↑</button>
+  <script defer src="js/loader.js"></script>
+  <script defer src="js/menu.js"></script>
+  <script defer src="js/active-link.js"></script>
+  <script defer src="js/modal.js"></script>
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/progress.js"></script>
+  <script defer src="js/data-panels.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>

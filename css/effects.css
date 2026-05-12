@@ -1,0 +1,54 @@
+.axis-loader {
+  position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; overflow: hidden;
+  background: radial-gradient(circle at center, rgba(139,92,246,.22), transparent 32%), linear-gradient(135deg, #03040a, #070916 55%, #04050d);
+  transition: opacity .7s var(--ease), visibility .7s var(--ease);
+}
+.axis-loader.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.axis-loader-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 44px 44px; animation: gridDrift 3.2s linear infinite; }
+.axis-loader-core { position: relative; width: 168px; height: 168px; display: grid; place-items: center; margin-bottom: 250px; }
+.axis-loader-mark { width: 78px; height: 78px; display: grid; place-items: center; border-radius: 24px; border: 1px solid rgba(255,255,255,.22); background: linear-gradient(135deg, rgba(139,92,246,.98), rgba(34,211,238,.72)); box-shadow: var(--glow-axis), var(--glow-cyan); font-family: var(--font-mono); font-weight: 900; }
+.axis-orbit { position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.14); border-radius: 50%; }
+.axis-orbit-a { animation: orbitA 3.2s linear infinite; }
+.axis-orbit-b { inset: 22px; border-color: rgba(34,211,238,.22); animation: orbitB 2.4s linear infinite; }
+.axis-loader-panel { position: absolute; width: min(560px, calc(100% - 40px)); padding: 28px; border: 1px solid rgba(185,201,255,.18); border-radius: 28px; background: rgba(9,13,27,.72); backdrop-filter: blur(24px); box-shadow: var(--shadow); text-align: center; transform: translateY(88px); }
+.axis-loader-panel h1 { font-size: clamp(2rem, 6vw, 3.7rem); margin: 10px 0 14px; }
+.loader-track { height: 6px; margin: 24px auto 0; border-radius: 999px; overflow: hidden; background: rgba(255,255,255,.09); max-width: 330px; }
+.loader-track span { display: block; height: 100%; background: linear-gradient(90deg, var(--axis), var(--axis-2), var(--axis-3)); animation: loadBar 3.2s var(--ease) forwards; transform: translateX(-100%); }
+@keyframes loadBar { to { transform: translateX(0); } }
+@keyframes orbitA { to { transform: rotate(360deg); } }
+@keyframes orbitB { to { transform: rotate(-360deg); } }
+@keyframes gridDrift { to { background-position: 44px 44px; } }
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s var(--ease), transform .65s var(--ease); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.image-modal { position: fixed; inset: 0; z-index: 999; display: none; place-items: center; padding: 20px; }
+.image-modal.is-open { display: grid; }
+.image-modal-backdrop { position: absolute; inset: 0; border: 0; background: rgba(0,0,0,.78); backdrop-filter: blur(16px); cursor: pointer; }
+.image-modal-content { position: relative; z-index: 1; width: min(1120px, 96vw); max-height: 92vh; padding: 18px; border: 1px solid var(--line-strong); border-radius: var(--radius-xl); background: var(--panel-strong); box-shadow: var(--shadow); overflow: auto; }
+.image-modal-content img { width: 100%; max-height: 76vh; object-fit: contain; border-radius: var(--radius-lg); }
+.image-modal-close { margin-left: auto; margin-bottom: 12px; display: flex; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.06); color: var(--text); cursor: pointer; font-family: var(--font-mono); font-weight: 800; }
+#imageModalCaption { text-align: center; margin-top: 12px; font-family: var(--font-mono); color: var(--muted); }
+
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 90;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 16px;
+  color: var(--text);
+  background: rgba(9,13,27,.78);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-soft), var(--glow-cyan);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: .22s var(--ease);
+}
+.back-to-top.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.back-to-top:hover { transform: translateY(-3px); border-color: rgba(34,211,238,.42); }
+body.is-locked { overflow: hidden; }
