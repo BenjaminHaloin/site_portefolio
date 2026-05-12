@@ -4,3 +4,8 @@ __MACOSX/
 node_modules/
 .env
 *.log
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+*.key
